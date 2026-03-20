@@ -13,6 +13,6 @@ resource "aws_instance" "i1"{
   }
   
   tags = {
-    Name = "writer-demo-ec2-web"
+    Name = "writercds-demo-ec2-web"
   }
 }
