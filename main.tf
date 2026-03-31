@@ -21,3 +21,12 @@ resource "aws_instance" "i1"{
     Name = "writercds-demo-ec2-web"
   }
 }
+
+resource "aws_s3_bucket" "bkt" {
+  bucket = "prashant-bkt-99"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
